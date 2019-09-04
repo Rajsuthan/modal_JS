@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Modal</title>
+</head>
+<body>
+  <div class="button">
+    <button>Click</button>
+  </div>
+
+  <form class="form">
+    <p class="close">close</p>
+    <h3>Subscribe for blog posts</h3>
+    <div class="formfill">
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+    </div>
+    <button>Submit</button>
+  </form>
+  
+  <script>
+
+    const button = document.querySelector('.button');
+    const form = document.querySelector('.form');
+    const close = document.querySelector('.close');
+
+    button.addEventListener('click', function() {
+      button.style.display = 'none';
+      form.style.display = 'block';
+    })
+
+    close.addEventListener('click', function() {
+      form.style.display = 'none';
+      button.style.display = 'block';
+    })
+
+
+  </script>
+</body>
+</html>

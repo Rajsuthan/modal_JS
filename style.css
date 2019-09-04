@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat',sans-serif;
+}
+.button {
+  text-align: center;
+}
+.button button {
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  background: crimson;
+  color: white;
+  font-family: 'Montserrat';
+  margin: 20px 0px;
+  cursor: pointer;
+}
+.form {
+  display: none;
+  position: relative;
+  text-align: center;
+  background: crimson;
+  color: white;
+  padding: 30px;
+  width: 80%;
+  margin: 20px auto;
+  box-shadow: 1px 1px 9px  rgba(0, 0, 0, 0.507);
+}
+.formfill {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+}
+input {
+  margin: 10px;
+  border: none;
+  padding: 10px 15px;
+}
+.form button {
+  padding: 5px;
+  width: 30%;
+  margin: 0 auto;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.form p {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+  color: rgb(27, 27, 27);
+}
+.form p:hover {
+  color: aliceblue;
+  transition: 0.2s ease;
+}
